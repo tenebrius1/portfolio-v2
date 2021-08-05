@@ -6,6 +6,7 @@ theme = "FeelIt"
 canonifyURLs = true
 enableRobotsTXT = true
 enableEmoji = true
+googleAnalytics = "G-MQF7BZ9KNV"
 
 [params]
   version = "1.0.X"
@@ -14,6 +15,9 @@ enableEmoji = true
   defaultTheme = "auto"
   dateFormat = "Jan 2, 2006"
   SourceMap = true
+
+  [params.pwa]
+    enable = false
 
   [params.search]
     enable = true
@@ -60,6 +64,9 @@ enableEmoji = true
     Email = "tanyg1@outlook.sg"
     Telegram = "yiguanaaa"
 
+  [params.cdn]
+    data = "jsdelivr.yml"
+
   [params.page]
     linkToMarkdown = true
     [params.page.share]
@@ -81,7 +88,6 @@ enableEmoji = true
         recordIP = true
         highlight = true
         enableQQ = false
-        serverURLs = "https://yiguan.me"
 
 [menu]
   [[menu.main]]
@@ -119,3 +125,25 @@ enableEmoji = true
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+
+[author]
+  name = "Yi Guan"
+  email = "tanyg1@outlook.sg"
+  link = "https://yiguan.me"
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[minify]
+  [minify.tdewolff]
+    [minify.tdewolff.html]
+      keepWhitespace = false
+
+[privacy]
+  [privacy.googleAnalytics]
+    anonymizeIP = false
+    disable = false
+    respectDoNotTrack = false
+    useSessionStorage = false
