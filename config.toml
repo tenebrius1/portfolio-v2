@@ -1,0 +1,121 @@
+baseURL = "https://yiguan.me/"
+defaultContentLanguage = "en"
+languageCode = "en"
+title = "Yi Guan"
+theme = "FeelIt"
+canonifyURLs = true
+enableRobotsTXT = true
+enableEmoji = true
+
+[params]
+  version = "1.0.X"
+  description = "Yi Guan is a second year Computer Science undergraduate at the National University of Singapore (NUS). Click here to view his profile!"
+  keywords = ["blog","developer","personal","portfolio","yiguan","hugo"]
+  defaultTheme = "auto"
+  dateFormat = "Jan 2, 2006"
+  SourceMap = true
+
+  [params.search]
+    enable = true
+    type = "lunr"
+    contentLength = 4000
+    placeholder = ""
+    maxResultLength = 10
+    snippetLength = 30
+    highlightTag = "em"
+
+  [params.header]
+    desktopMode = "auto"
+    mobileMode = "auto"
+
+  [params.footer]
+    enable = true
+    hugo = true
+    copyright = true
+    author = true
+    since = 2021
+
+  [params.section]
+    paginate = 20
+    dateFormat = "Jan 02"
+
+  [params.list]
+    paginate = 20
+    dateFormat = "Jan 02"
+
+  [params.home]
+    [params.home.profile]
+      enable = true
+      avatarURL = "https://res.cloudinary.com/dgfzlpuds/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1627452521/portfolio_a7hatg.jpg"
+      title = "Hello, welcome to my site! 👋🏼"
+      social = true
+    [params.home.posts]
+      enable = true
+      paginate = 6
+      imagePreview = true
+
+  [params.social]
+    GitHub = "tenebrius1"
+    Linkedin = "yi-guan"
+    Email = "tanyg1@outlook.sg"
+    Telegram = "yiguanaaa"
+
+  [params.page]
+    linkToMarkdown = true
+    [params.page.share]
+      enable = true
+      Twitter = true
+      Facebook = true
+      Linkedin = true
+    [params.page.comment]
+      enable = true
+      [params.page.comment.valine]
+        enable = true
+        appId = "POWMr8Q5Qtbf9WU3EiSpUGDR-MdYXbMMI"
+        appKey = "bI0wsRKkEH3peu5kukgGwl0M"
+        placeholder = "Comment annonymously without filling up any personal information!"
+        avatar = "robohash"
+        pageSize = 10
+        lang = "en"
+        visitor = true
+        recordIP = true
+        highlight = true
+        enableQQ = false
+        serverURLs = "https://yiguan.me"
+
+[menu]
+  [[menu.main]]
+      identifier = "about"
+      name = "About me"
+      url = "/about/"
+      title = "About me"
+      weight = 1
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    title = "View my blogs"
+    weight = 2
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects/"
+    title = "View my projects"
+    weight = 3
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    title = "Contact me!"
+    weight = 4
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    lineNumbersInTable = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]

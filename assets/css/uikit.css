@@ -1,0 +1,45 @@
+.uk-link-toggle:focus .uk-link,
+.uk-link-toggle:hover .uk-link,
+.uk-link:hover,
+a:hover {
+  text-decoration: none;
+}
+
+[theme=light] .uk-link,
+a {
+  color: #161209;
+}
+
+[theme=light] .footer-container,
+.footer-container {
+  background-color: #f2f2f2;
+}
+
+[theme=dark] .footer-container {
+  background-color: #292a2d;
+}
+
+[theme=light] .uk-subnav-divider>:nth-child(n+2):not(.uk-first-column)::before,
+.uk-subnav-divider>:nth-child(n+2):not(.uk-first-column)::before {
+  border-left-color: #7b7974;
+}
+
+[theme=dark] .uk-container-small>.single-title,
+[theme=dark] .uk-card-title,
+[theme=dark] .uk-button-default,
+[theme=dark] h1,
+[theme=dark] h2,
+[theme=dark] h3,
+[theme=dark] h4,
+[theme=dark] h5,
+[theme=dark] h6 {
+  color: #a9a9b3;
+}
+
+#project-container {
+  margin-top: 2rem;
+}
+
+img.skills {
+  height: 8rem;
+}

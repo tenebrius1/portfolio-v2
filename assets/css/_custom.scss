@@ -1,0 +1,26 @@
+header {
+  .header-title {
+    margin-left: 1rem;
+  }
+
+  .menu-inner {
+    margin-right: 1rem;
+  }
+}
+
+.home[data-home=posts] .home-avatar img {
+  width: 10rem;
+}
+
+footer {
+  line-height: 1.75rem;
+  height: unset;
+}
+
+[theme="dark"] #header-desktop .header-wrapper .menu .menu-item.delimiter {
+	border-left-color: #a9a9b3;
+}
+
+#header-desktop .header-wrapper .menu a.active {
+  font-weight: 700;
+}

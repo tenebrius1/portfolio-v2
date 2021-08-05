@@ -1,0 +1,114 @@
+{{- define "title" }}{{ .Title }} - {{ .Site.Title }}{{ end -}}
+
+{{- define "content" -}}
+<article class="page single">
+  <div class="single-card">
+    <h2 class="single-title animated fadeInDown faster">
+      {{- .Params.Title -}}
+    </h2>
+    <p>{{ .Params.description }}</p>
+    <div class="post-meta uk-margin-bottom">
+      <div class="date">
+        <span class="posted-on uk-margin-right">
+          <i class="fa fa-calendar" aria-hidden="true"></i>
+          <time datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>
+            {{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}
+          </time>
+        </span>
+        <span class="reading-time">
+          <i class="fa fa-clock-o" aria-hidden="true"></i>
+          {{ i18n "reading_time" .ReadingTime }}
+        </span>
+      </div>
+    </div>
+    {{ if isset .Params "coders" }}
+    <div class="uk-child-width-auto" uk-grid>
+      {{ if ( gt (len .Params.coders ) 0) }}
+      <div>
+        <button class="uk-button uk-button-default" type="button">
+          <span uk-icon="icon: users"></span>
+          Team Project
+        </button>
+        <div class="uk-width-auto" uk-dropdown="pos: bottom-center; delay-hide:400">
+          <div class="uk-dropdown-grid uk-child-width-1-2" uk-grid>
+            <div>
+              <ul class="uk-nav uk-dropdown-nav">
+                {{ range .Params.coders }}
+                <li>
+                  <a href="https://github.com/{{ . }}" target="_blank" rel="noopener">
+                    <img src="https://github.com/{{ . }}.png" alt="Smiley face" width="42" height="42"
+                      style="border-radius: 50%"> {{ . }}
+                  </a>
+                </li>
+                {{ end }}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+      {{ if isset .Params "site" }}
+      {{ if ne .Params.site "" }}
+      <div>
+        <a class="uk-button uk-button-default" href="{{.Params.site}}" target="_blank" rel="noopener"><span
+            uk-icon="icon: world"></span>
+          Website</a>
+      </div>
+      {{ end }}
+      {{ end }}
+      <div>
+        {{ if ( gt (len .Params.github ) 1) }}
+        <div>
+          <button class="uk-button uk-button-default" type="button"> <span uk-icon="icon: github"></span>
+            GitHub</button>
+          <div class="uk-width-auto" uk-dropdown="pos: bottom-center; delay-hide:400">
+            <div class="uk-dropdown-grid uk-child-width-1-2" uk-grid>
+              <div>
+                <ul class="uk-nav uk-dropdown-nav">
+                  {{ range .Params.github }}
+                  <li><a style="color: #0366d6; font-weight: 600" href="{{.}}" target="_blank" rel="noopener"><span><img
+                          loading="lazy"
+                          src="https://res.cloudinary.com/samrobbins/image/upload/v1593092912/repo_ec3slk.svg"></span>
+                      {{index (last 1 (split . "/")) 0}}</a></li>
+                  {{ end }}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        {{ else if ( gt (len .Params.github ) 0) }}
+        <a class="uk-button uk-button-default" href="{{index (.Params.github) 0}}" target="_blank" rel="noopener"> <span
+            uk-icon="icon: github"></span>
+          Github</a>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+    <hr class="full-width">
+    {{ if isset .Params "tech" }}
+    {{ if (gt (len .Params.tech) 0) }}
+    <h2 class="uk-text-center uk-heading-small">Built with</h2>
+    <section>
+      <div class="uk-container">
+        <div
+          class="uk-child-width-1-4@l uk-child-width-1-3@m uk-child-width-1-3@s uk-child-width-1-2 uk-text-center uk-flex-center"
+          uk-grid>
+          {{ range .Params.tech }}
+          <div class="imagemargin">
+            <a href="{{ .url }}" target="_blank" rel="noopener">
+              <img class="contain skills" src="{{ .logo }}" alt="{{ .name }}" loading="lazy" style="cursor: pointer">
+            </a>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+    <hr class="full-width">
+    {{ end }}
+    {{ end }}
+    <div>
+      {{ .Content }}
+    </div>
+  </div>
+</article>
+{{ end }}
