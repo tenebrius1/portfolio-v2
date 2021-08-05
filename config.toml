@@ -122,6 +122,9 @@ googleAnalytics = "G-MQF7BZ9KNV"
     guessSyntax = true
     lineNos = true
     lineNumbersInTable = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 6
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
@@ -140,10 +143,3 @@ googleAnalytics = "G-MQF7BZ9KNV"
   [minify.tdewolff]
     [minify.tdewolff.html]
       keepWhitespace = false
-
-[privacy]
-  [privacy.googleAnalytics]
-    anonymizeIP = false
-    disable = false
-    respectDoNotTrack = false
-    useSessionStorage = false

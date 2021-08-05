@@ -18,9 +18,9 @@
         {{- partial "head/seo.html" . -}}
 
         {{- $analytics := .Site.Config.Privacy.GoogleAnalytics -}}
-        {{- if not $analytics.Disable }}{{ with .Site.GoogleAnalytics -}}
+        {{- if not $analytics.Disable }}
             {{ template "_internal/google_analytics.html" . }}
-        {{- end -}}{{ end -}}
+        {{- end -}}
     </head>
     {{- if ne $offline true -}}
     <body data-header-desktop="{{ .Site.Params.header.desktopMode }}" data-header-mobile="{{ .Site.Params.header.mobileMode }}">
