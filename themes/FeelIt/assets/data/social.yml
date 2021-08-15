@@ -4,7 +4,7 @@ github:
   Prefix: https://github.com/
   Title: GitHub
   Icon:
-    Class: fab fa-github-alt fa-fw
+    Class: fab fa-github fa-fw
 
 # 002: LinkedIn
 linkedin:
@@ -44,7 +44,7 @@ telegram:
   Prefix: https://t.me/
   Title: Telegram
   Icon:
-    Class: fab fa-telegram-plane fa-fw
+    Class: fab fa-telegram fa-fw
 
 # 007: Medium
 medium:
@@ -493,25 +493,33 @@ bilibili:
   Icon:
     Simpleicons: bilibili
 
-# 063: Email
-email:
+# 063: Codersrank
+codersrank:
   Weight: 63
+  Prefix: https://profile.codersrank.io/user/
+  Title: Codersrank
+  Icon:
+    Simpleicons: codersrank
+
+# 064: Email
+email:
+  Weight: 64
   Template: mailto:%v
   Title: Email
   Icon:
     Class: far fa-envelope fa-fw
 
-# 064: Resume
+# 065: Resume
 resume:
-  Weight: 64
+  Weight: 65
   Prefix: https://goo.gl/
   Title: Download Resume
   Icon:
     Class: fas fa-user-circle fa-fw
 
-# 065: RSS
+# 066: RSS
 rss:
-  Weight: 65
+  Weight: 66
   Url: /index.xml
   Title: RSS
   Newtab: true

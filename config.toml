@@ -63,6 +63,7 @@ googleAnalytics = "G-MQF7BZ9KNV"
     Linkedin = "yi-guan"
     Email = "tanyg1@outlook.sg"
     Telegram = "yiguanaaa"
+    codersrank = "tenebrius1"
 
   [params.cdn]
     data = "jsdelivr.yml"
