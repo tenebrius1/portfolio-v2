@@ -61,7 +61,7 @@ Do note that this will create a new `<sitename>` folder where you run it.
 
 ## Choose a theme
 
-Head to <https://themes.gohugo.io/> to see a complete list of themes available on Hugo. If you like the way this website looks, check out [hugo-coder](https://themes.gohugo.io/themes/hugo-coder/)!
+Head to <https://themes.gohugo.io/> to see a complete list of themes available on Hugo. If you like the way this website looks, check out [FeelIt](https://github.com/khusika/FeelIt) and !
 
 If you do have some web development knowledge and would like to be able to tweak the theme yourself in the future, I would recommend you to download the zip file and unzip it into your themes folder instead of using the `git submodule` or `git clone` command. This will ensure that you have a single repository for both your content and theme which simplifies your version control and deployment process.
 
@@ -89,83 +89,166 @@ Most themes do come with their own documentation of what can be configured. For 
 My personal `config.toml`:
 
 ```toml
-baseURL = "/"
-languageCode = "en-us"
-title = "Yi Guan."
-theme = "hugo-coder"
-
-pygmentsStyle = "vim"
-pygmentsCodeFences = true
-pygmentsCodeFencesGuessSyntax = true
+baseURL = "https://yiguan.me/"
+defaultContentLanguage = "en"
+languageCode = "en"
+title = "Yi Guan"
+theme = "FeelIt"
+canonifyURLs = true
+enableRobotsTXT = true
 enableEmoji = true
-
-disqusShortname = ""
+googleAnalytics = ""
 
 [params]
-  author = "Yi Guan"
-  description = "Yi Guan's personal website"
-  keywords = "blog,developer,personal,portfolio"
-  avatarURL = "images/avatar.jpg"
+  version = "1.0.X"
+  description = "Yi Guan is a second year Computer Science undergraduate at the National University of Singapore (NUS). Click here to view his profile!"
+  keywords = ["blog","developer","personal","portfolio","yiguan","hugo"]
+  defaultTheme = "auto"
+  dateFormat = "Jan 2, 2006"
+  SourceMap = true
 
-  footerContent = "Just a CS student trying to survive without coffee 😴"
-  dateFormat = "January 2, 2006"
-  hideFooter = false
-  hideCredits = false
-  hideCopyright = false
-  since = 2021
+  [params.pwa]
+    enable = false
 
-  colorScheme = "auto"
-  hideColorSchemeToggle = false
+  [params.search]
+    enable = true
+    type = "algolia"
+    contentLength = 4000
+    placeholder = ""
+    maxResultLength = 10
+    snippetLength = 30
+    highlightTag = "em"
+    [params.search.algolia]
+      index = "index.en"
+      appID = ""
+      searchKey= ""
 
-  enableTwemoji = false
+  [params.header]
+    desktopMode = "auto"
+    mobileMode = "auto"
 
-  customCSS = ["css/home.css"]
-  customSCSS = []
-  customJS = []
+  [params.footer]
+    enable = true
+    hugo = true
+    copyright = true
+    author = true
+    since = 2021
 
-[taxonomies]
-  category = "categories"
-  series = "series"
-  tag = "tags"
-  author = "authors"
+  [params.section]
+    paginate = 20
+    dateFormat = "Jan 02"
 
-[[params.social]]
-  name = "Github"
-  icon = "fa fa-github fa-2x"
-  weight = 1
-  url = "https://github.com/XXXX"
+  [params.list]
+    paginate = 20
+    dateFormat = "Jan 02"
 
-[[params.social]]
-  name = "LinkedIn"
-  icon = "fa fa-linkedin-square"
-  weight = 2
-  url = "https://www.linkedin.com/in/XXXX/"
+  [params.home]
+    [params.home.profile]
+      enable = true
+      avatarURL = "https://res.cloudinary.com/dgfzlpuds/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1627452521/portfolio_a7hatg.jpg"
+      title = "Hello, welcome to my site! 👋🏼"
+      social = true
+    [params.home.posts]
+      enable = true
+      paginate = 6
+      imagePreview = true
 
-[[params.social]]
-  name = "Email"
-  icon = "fa fa-envelope"
-  weight = 3
-  url = "mailto:XXXX"
+  [params.social]
+    GitHub = "XXXX"
+    Linkedin = "XXXX"
+    Email = "XXXX"
+    Telegram = "XXXX"
+    codersrank = "XXXX"
 
-[[menu.main]]
-  name = "about me"
-  weight = 1
-  url = "about/"
+  [params.cdn]
+    data = "jsdelivr.yml"
 
-[[menu.main]]
-  name = "blogs"
-  weight = 2
-  url = "posts/"
+  [params.page]
+    linkToMarkdown = true
+    [params.page.share]
+      enable = true
+      Twitter = true
+      Facebook = true
+      Linkedin = true
+    [params.page.comment]
+      enable = true
+      [params.page.comment.valine]
+        enable = true
+        appId = ""
+        appKey = ""
+        placeholder = "Comment annonymously without filling up any personal information!"
+        avatar = "robohash"
+        pageSize = 10
+        lang = "en"
+        visitor = true
+        recordIP = true
+        highlight = true
+        enableQQ = false
 
-[[menu.main]]
-  name = "projects"
-  weight = 3
-  url = "projects/"
+[menu]
+  [[menu.main]]
+      identifier = "about"
+      name = "About me"
+      url = "/about/"
+      title = "About me"
+      weight = 1
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    title = "View my blogs"
+    weight = 2
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects/"
+    title = "View my projects"
+    weight = 3
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    title = "Contact me!"
+    weight = 4
 
-[[menu.main]]
-  name = "contact"
-  weight = 4
-  url = "contact/"
+[markup]
+  [markup.highlight]
+    noClasses = false
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    lineNumbersInTable = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 6
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[mediaTypes]
+  [mediaTypes."text/plain"]
+    suffixes = ["md"]
+
+[outputFormats.MarkDown]
+  mediaType = "text/plain"
+  isPlainText = true
+  isHTML = false
+
+[author]
+  name = "Yi Guan"
+  email = "tanyg1@outlook.sg"
+  link = "https://yiguan.me"
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[minify]
+  [minify.tdewolff]
+    [minify.tdewolff.html]
+      keepWhitespace = false
+
 ```
 
 Breaking down the `config.toml` file further:
@@ -174,12 +257,12 @@ Breaking down the `config.toml` file further:
 * `languageCode` tells Hugo what to include in the `Content-Language` meta tag when it generates the HTML files. This is useful since hugo supports il8n by default which is used for creating multi-lingual sites.
 * `title` will affect what is displayed in tabs of your browser.
 * `theme` should be filled with the theme that you are using so Hugo can automatically render your website with the theme configured.
-* Hugo also supports syntax highlighting by default  but what syntax highlighter are enabled depends on what theme you use. For hugo-coder, the [`pygments`](https://pygments.org/docs/) syntax highlighter is used. Pygments supports a variety of styles to be used which can be viewed on [this website](https://help.farbox.com/pygments.html).
+* Hugo also supports syntax highlighting by default  but what syntax highlighter are enabled depends on what theme you use. For FeelIt, the [`chrome`](https://github.com/alecthomas/chroma) syntax highlighter is used. Chroma supports a variety of styles to be used which can be viewed on [their GitHub page](https://github.com/alecthomas/chroma).
 * the `params` section defined in the `config.toml` file can be accessed in any of the HTML files using .Site.Params.<param_name>
 * Arguably the most important part of the `config.toml` file is your `menu.main` section. This is where you will include what nav-links are available and also where to load the contents from. For each nav-link you want, `name` is what will be shown to the user, `weight` tells Hugo where to place it in the navbar - i.e weight of 1 will always come first. `url` serves 2 purpose:
   * Firstly it tells Hugo the path at which the content is coming from. For example, I have configured the content of my blog posts to come from the `/posts` folder inside the `content` folder. This means that any new blog post I want to create, I will have to create it under `/posts` for it to appear in the blogs page.
   * Secondly, it is the URL that is used for your website. For example, when people click on the `blogs` nav-link they will be brought to `<base_website>/posts`.
-* For all the available configurations available visit the [configuration](https://gohugo.io/getting-started/configuration/) page on Hugo websuite.
+* For all the available configurations available visit the [configuration](https://gohugo.io/getting-started/configuration/) page on Hugo websuite and for more specific configuration for the FeelIt theme, visit [their GitHub page](https://github.com/khusika/FeelIt).
 
 ## Running the development server
 
