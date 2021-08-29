@@ -15,10 +15,7 @@
             {{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}
           </time>
         </span>
-        <span class="reading-time">
-          <i class="fa fa-clock-o" aria-hidden="true"></i>
-          {{ i18n "reading_time" .ReadingTime }}
-        </span>
+        <span><i class="far fa-clock fa-fw"></i>&nbsp;{{ T "readingTime" .ReadingTime }}</span>&nbsp;
       </div>
     </div>
     {{ if isset .Params "coders" }}
