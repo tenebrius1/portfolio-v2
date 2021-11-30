@@ -119,6 +119,12 @@ googleAnalytics = "G-MQF7BZ9KNV"
     url = "/contact/"
     title = "Contact me!"
     weight = 4
+  [[menu.main]]
+    identifier = "resume"
+    name = "Resume"
+    url = "/docs/resume.pdf"
+    title = "View my resume"
+    weight = 5
 
 [markup]
   [markup.highlight]

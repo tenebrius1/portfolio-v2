@@ -1,13 +1,17 @@
-.uk-link-toggle:focus .uk-link,
-.uk-link-toggle:hover .uk-link,
-.uk-link:hover,
-a:hover {
+.menu .uk-link-toggle:focus .uk-link,
+.menu .uk-link-toggle:hover .uk-link,
+.menu .uk-link:hover,
+.menu a:hover {
   text-decoration: none;
 }
 
-[theme=light] .uk-link,
-a {
+[theme=light] .menu .uk-link,
+.menu a, header a, footer a {
   color: #161209;
+}
+
+[theme=dark] .menu a {
+  color: #a9a9b3;
 }
 
 [theme=light] .footer-container,
