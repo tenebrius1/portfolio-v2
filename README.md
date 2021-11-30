@@ -15,7 +15,7 @@ I wanted a clean, simple and responsive website where I could store my random th
 2. Hosted on [Netlify](https://www.netlify.com/).
 3. PositiveSSL provided by [Sectigo](https://sectigostore.com/ssl-certificates/positivessl).
 4. Domain registration and management using [namecheap](https://www.namecheap.com/).
-5. Design is a mix of [hugo-coder](https://github.com/luizdepra/hugo-coder) and [hugo-developer-portfolio](https://github.com/samrobbins85/hugo-developer-portfolio) theme.
+5. Design is a mix of [FeelIt](https://github.com/khusika/FeelIt) and [hugo-developer-portfolio](https://github.com/samrobbins85/hugo-developer-portfolio) theme.
 6. I used [UIKit](https://getuikit.com/), [Font Awesome 5](https://fontawesome.com/) icons and [Google Fonts](https://fonts.google.com/) for styling.
 7. I used vanilla Javascript for behaviour.
 8. I'm using [UptimeRobot](https://stats.uptimerobot.com/jgLl6TjBYK) and Google Analytics for monitoring and metrics.
