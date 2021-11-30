@@ -29,8 +29,8 @@ googleAnalytics = "G-MQF7BZ9KNV"
     highlightTag = "em"
     [params.search.algolia]
       index = "index.en"
-      appID = "NIZKAAWI4T"
-      searchKey= "fa591395e6dbf8a84c4d18044601a4da"
+      appID = "YSCDMQ5VYN"
+      searchKey= "ca72e4893752ffc7721b523b67dfa8d0"
 
   [params.header]
     desktopMode = "auto"
