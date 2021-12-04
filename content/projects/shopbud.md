@@ -8,9 +8,9 @@ github:
 title: ShopBud
 site: https://shopbud.herokuapp.com/
 tech:
-  - {logo: /images/projects/python.svg, name: Python, url: https://www.python.org/}
-  - {logo: /images/projects/shopbud/django-logo.svg, name: Django, url: https://www.djangoproject.com/}
-  - {logo: /images/projects/shopbud/postgresql.svg, name: PostgreSQL, url: https://www.postgresql.org/}
+  - {logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg, name: Python, url: https://www.python.org/}
+  - {logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-original.svg, name: Django, url: https://www.djangoproject.com/}
+  - {logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg, name: PostgreSQL, url: https://www.postgresql.org/}
 library:
   js:
     - https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/js/uikit.min.js

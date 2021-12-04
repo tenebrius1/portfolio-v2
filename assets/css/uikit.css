@@ -10,8 +10,12 @@
   color: #161209;
 }
 
-[theme=dark] .menu a {
-  color: #a9a9b3;
+[theme=dark] .menu a, [theme=dark] header a, [theme=dark] footer a {
+  color: #a9a9b3 !important;
+}
+
+[theme=dark] a {
+  color: #1e87f0;
 }
 
 [theme=light] .footer-container,
@@ -49,5 +53,5 @@
 }
 
 img.skills {
-  height: 8rem;
+  height: 6rem;
 }

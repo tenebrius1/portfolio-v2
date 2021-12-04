@@ -7,9 +7,9 @@ github: [https://github.com/tenebrius1/flack]
 title: Flack
 site: https://cs50-project2flask.herokuapp.com/
 tech:
-  - {logo: /images/projects/python.svg, name: Python, url: https://www.python.org/}
-  - {logo: /images/projects/flack/flask.svg, name: Flask, url: https://flask.palletsprojects.com/en/2.0.x/}
-  - {logo: /images/projects/flack/socket-io.svg, name: Socket.IO, url: https://socket.io/}
+  - {logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg, name: Python, url: https://www.python.org/}
+  - {logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg, name: Flask, url: https://flask.palletsprojects.com/en/2.0.x/}
+  - {logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg, name: Socket.IO, url: https://socket.io/}
 library:
   js:
     - https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/js/uikit.min.js
