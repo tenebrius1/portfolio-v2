@@ -22,6 +22,7 @@
         {{- if and (not $analytics.Disable) (.Site.GoogleAnalytics) -}}
             {{- template "_internal/google_analytics.html" . -}}
         {{- end -}}
+        <script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
     </head>
     {{- if ne $offline true -}}
     <body data-header-desktop="{{ .Site.Params.header.desktopMode }}" data-header-mobile="{{ .Site.Params.header.mobileMode }}">

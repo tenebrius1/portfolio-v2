@@ -18,8 +18,8 @@ library:
 
 I'm **Yi Guan**, a second year Computer science undergraduate at the National University of Singapore (NUS) :singapore:. 
 
-I'm passionate about Software Engineering and love to build projects that are performant and 
+I'm passionate about Software Engineering and love to build projects that are performant and easy to use.
 
-In my free time, I like to run
+In my free time, I like to run, play volleyball and read up on the latest tech.
 
 My résumé can be found [here](/docs/resume.pdf).

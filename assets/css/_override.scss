@@ -2,16 +2,3 @@
 
 $code-font-family: Fira Code, Source Code Pro, Menlo, Consolas, Monaco, monospace;
 $global-font-family: Segoe UI, system-ui, -apple-system, BlinkMacSystemFont, PingFang SC, Microsoft YaHei UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-
-[theme=light] .menu .uk-link,
-.menu a, header a, footer a {
-  color: #161209;
-}
-
-[theme=dark] .menu a, [theme=dark] header a, [theme=dark] footer a {
-  color: #a9a9b3 !important;
-}
-
-[theme=dark] a {
-  color: #1e87f0;
-}

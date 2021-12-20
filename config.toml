@@ -54,7 +54,7 @@ googleAnalytics = "G-MQF7BZ9KNV"
   [params.home]
     [params.home.profile]
       enable = true
-      avatarURL = "https://res.cloudinary.com/dgfzlpuds/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1627452521/portfolio_a7hatg.jpg"
+      avatarURL = "https://res.cloudinary.com/dgfzlpuds/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1627452521/portfolio_a7hatg.webp"
       title = "Hello, welcome to my site! 👋🏼"
       social = true
     [params.home.posts]

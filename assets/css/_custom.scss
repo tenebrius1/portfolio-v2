@@ -24,3 +24,19 @@ footer {
 #header-desktop .header-wrapper .menu a.active {
   font-weight: 700;
 }
+
+[theme="dark"] .content a {
+  color: #55bde2;
+}
+
+[theme="dark"] .content a:hover {
+  text-decoration: underline;
+}
+
+.content a {
+  color: #1e87f0;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
