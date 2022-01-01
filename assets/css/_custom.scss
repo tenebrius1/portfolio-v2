@@ -40,3 +40,34 @@ footer {
 .content a:hover {
   text-decoration: underline;
 }
+
+.icon-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.skills-icon {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	height: 50px;
+	justify-content: center;
+	margin-bottom: 1.5rem;
+	margin-right: 1rem;
+	position: relative;
+	width: 50px;
+	z-index: 0;
+}
+
+.skills-icon-name {
+	bottom: -1.3rem;
+	font-size: 12px;
+	opacity: 0;
+	position: absolute;
+	transition: opacity .5s,color .5s;
+	white-space: nowrap;
+}
+
+.skills-icon:hover .skills-icon-name {
+	opacity: 1;
+}

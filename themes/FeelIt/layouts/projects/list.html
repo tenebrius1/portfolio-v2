@@ -3,7 +3,7 @@
 {{- end -}}
 
 {{- define "content" -}}
-<div class="page archive">
+<div class="page">
   {{- /* Title */ -}}
   <h2 class="single-title animated fadeInDown faster">
     {{- .Params.Title -}}
@@ -22,9 +22,15 @@
       <li data-tags="{{delimit .Params.categories ' '}}">
         <div class="project-cards uk-card" style="position: relative;">
           <div class="fixy">
-            <!-- <div class="uk-card-media-top uk-padding-small">
-              <img class="contain experience" src="{{.Params.Image | absURL}}" alt="" />
-            </div> -->
+            <div class="uk-card-media-top uk-padding-small">
+              <div uk-lightbox>
+                {{ with .Params.Image }}
+                <a href="{{ .url | absURL }}" data-caption="{{ .caption }}">
+                  <img class="contain experience" src="{{ .url | absURL}}" alt="" />
+                </a>
+                {{ end }}
+              </div>
+            </div>
             <div class="uk-card-body">
               <h3 class="uk-card-title">{{.Title}}</h3>
               <p>{{.Params.Description}}</p>

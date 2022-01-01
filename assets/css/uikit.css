@@ -14,7 +14,7 @@
   color: #a9a9b3 !important;
 }
 
-[theme=dark] a {
+[theme=dark] a:not(.slideButtons, .uk-button-default, .uk-subnav a) {
   color: #1e87f0;
 }
 
