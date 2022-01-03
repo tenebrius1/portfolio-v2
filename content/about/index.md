@@ -3,7 +3,6 @@ title: About Me
 description: about me
 date: 2021-07-08
 draft: false
-linkToMarkdown: true
 toc: 
   enable: false
 comment: 

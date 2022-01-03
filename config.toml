@@ -6,6 +6,7 @@ theme = "FeelIt"
 canonifyURLs = true
 enableRobotsTXT = true
 enableEmoji = true
+enableGitInfo = true
 googleAnalytics = "G-MQF7BZ9KNV"
 
 [params]
@@ -13,11 +14,9 @@ googleAnalytics = "G-MQF7BZ9KNV"
   description = "Yi Guan is a second year Computer Science undergraduate at the National University of Singapore (NUS). Click here to view his profile!"
   keywords = ["blog","developer","personal","portfolio","yiguan","hugo"]
   defaultTheme = "auto"
+  gitRepo = "https://github.com/tenebrius1/portfolio-v2"
   dateFormat = "Jan 2, 2006"
   SourceMap = true
-
-  [params.pwa]
-    enable = false
 
   [params.search]
     enable = true
@@ -33,7 +32,7 @@ googleAnalytics = "G-MQF7BZ9KNV"
       searchKey= "ca72e4893752ffc7721b523b67dfa8d0"
 
   [params.header]
-    desktopMode = "auto"
+    desktopMode = "fixed"
     mobileMode = "auto"
 
   [params.footer]
@@ -66,7 +65,6 @@ googleAnalytics = "G-MQF7BZ9KNV"
     GitHub = "tenebrius1"
     Linkedin = "yi-guan"
     Email = "tanyg1@outlook.sg"
-    Telegram = "yiguanaaa"
     codersrank = "tenebrius1"
 
   [params.cdn]
@@ -83,8 +81,8 @@ googleAnalytics = "G-MQF7BZ9KNV"
       enable = true
       [params.page.comment.valine]
         enable = true
-        appId = "POWMr8Q5Qtbf9WU3EiSpUGDR-MdYXbMMI"
-        appKey = "bI0wsRKkEH3peu5kukgGwl0M"
+        appId = "rrOGNbe8BAta5amB3x0tIWwA-MdYXbMMI"
+        appKey = "BNNhhLKNvnknXnwvbdl22kXw"
         placeholder = "Comment annonymously without filling up any personal information!"
         avatar = "robohash"
         pageSize = 10
@@ -93,6 +91,7 @@ googleAnalytics = "G-MQF7BZ9KNV"
         recordIP = true
         highlight = true
         enableQQ = false
+        serverURLs = "https://rrognbe8.api.lncldglobal.com"
 
 [menu]
   [[menu.main]]
@@ -142,6 +141,13 @@ googleAnalytics = "G-MQF7BZ9KNV"
   mediaType = "text/plain"
   isPlainText = true
   isHTML = false
+
+[privacy]
+  [privacy.googleAnalytics]
+    anonymizeIP = false
+    disable = false
+    respectDoNotTrack = true
+    useSessionStorage = true
 
 [author]
   name = "Yi Guan"

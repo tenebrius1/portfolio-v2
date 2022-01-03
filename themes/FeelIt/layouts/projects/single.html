@@ -82,7 +82,7 @@
     {{ end }}
     {{ if isset .Params "screenshots" }}
     <hr class="full-width">
-    <div uk-slideshow="ratio: 7:3; autoplay: true; autoplay-interval: 4000"
+    <div uk-slideshow="ratio: 7:3; autoplay: true; autoplay-interval: 6000"
       class="uk-margin-top uk-position-relative uk-visible-toggle" tabindex="-1">
       <ul class="uk-slideshow-items">
         {{ range .Params.screenshots }}
@@ -100,7 +100,7 @@
     {{ end }}
     {{ if isset .Params "tech" }}
     {{ if (gt (len .Params.tech) 0) }}
-    <h3>Tech Stack</h3>
+    <h2>Tech Stack</h2>
     <div class="icon-wrapper">
       {{ range .Params.tech }}
       <div class="skills-icon">

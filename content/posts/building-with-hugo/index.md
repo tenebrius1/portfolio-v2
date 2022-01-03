@@ -5,7 +5,6 @@ date: 2021-07-08
 draft: false
 tags: ["web development", "hugo", "jamstack"]
 categories: ["Web Dev"]
-linkToMarkdown: true
 resources:
 - name: "featured-image"
   src: "featured-image.webp"
@@ -257,7 +256,7 @@ Breaking down the `config.toml` file further:
 * `languageCode` tells Hugo what to include in the `Content-Language` meta tag when it generates the HTML files. This is useful since hugo supports il8n by default which is used for creating multi-lingual sites.
 * `title` will affect what is displayed in tabs of your browser.
 * `theme` should be filled with the theme that you are using so Hugo can automatically render your website with the theme configured.
-* Hugo also supports syntax highlighting by default  but what syntax highlighter are enabled depends on what theme you use. For FeelIt, the [`chrome`](https://github.com/alecthomas/chroma) syntax highlighter is used. Chroma supports a variety of styles to be used which can be viewed on [their GitHub page](https://github.com/alecthomas/chroma).
+* Hugo also supports syntax highlighting by default  but what syntax highlighter are enabled depends on what theme you use. For FeelIt, the [`chroma`](https://github.com/alecthomas/chroma) syntax highlighter is used. Chroma supports a variety of styles to be used which can be viewed on [their GitHub page](https://github.com/alecthomas/chroma).
 * the `params` section defined in the `config.toml` file can be accessed in any of the HTML files using .Site.Params.<param_name>
 * Arguably the most important part of the `config.toml` file is your `menu.main` section. This is where you will include what nav-links are available and also where to load the contents from. For each nav-link you want, `name` is what will be shown to the user, `weight` tells Hugo where to place it in the navbar - i.e weight of 1 will always come first. `url` serves 2 purpose:
   * Firstly it tells Hugo the path at which the content is coming from. For example, I have configured the content of my blog posts to come from the `/posts` folder inside the `content` folder. This means that any new blog post I want to create, I will have to create it under `/posts` for it to appear in the blogs page.
