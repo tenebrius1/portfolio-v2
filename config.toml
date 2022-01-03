@@ -18,6 +18,12 @@ googleAnalytics = "G-MQF7BZ9KNV"
   dateFormat = "Jan 2, 2006"
   SourceMap = true
 
+  [params.pwa]
+      # enable PWA support
+      enable = true
+      # service-worker version
+      version = "1.0.1"
+
   [params.search]
     enable = true
     type = "algolia"

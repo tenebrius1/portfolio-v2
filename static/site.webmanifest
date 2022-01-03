@@ -1,0 +1,17 @@
+{
+  "name": "YiGuan",
+  "short_name": "YiGuan",
+  "icons": [
+      {
+          "src": "/android-chrome-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png",
+          "purpose": "any maskable"
+      }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "orientation" : "portrait",
+  "background_color": "#132651",
+  "theme_color": "#FFFFFF"
+}
