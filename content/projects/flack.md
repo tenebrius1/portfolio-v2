@@ -9,7 +9,7 @@ github: [https://github.com/tenebrius1/flack]
 title: Flack
 site: https://cs50-project2flask.herokuapp.com/
 tech:
-  - {logo: {Simpleicons: python}, name: Python}
+  - {logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg, name: Python}
   - {logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg, name: Flask}
   - {logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg, name: Socket.IO}
   - {logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg, name: Git}
