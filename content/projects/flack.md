@@ -9,7 +9,7 @@ github: [https://github.com/tenebrius1/flack]
 title: Flack
 site: https://cs50-project2flask.herokuapp.com/
 tech:
-  - {logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg, name: Python}
+  - {logo: {Simpleicons: python}, name: Python}
   - {logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg, name: Flask}
   - {logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg, name: Socket.IO}
   - {logo: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg, name: Git}
@@ -25,7 +25,7 @@ library:
     - css/uikit.css
 ---
 
-### Context
+## Context
 
 Flack is one of the assignments given to learners of [CS50's Web Programming with Python and JavaScript](https://cs50.harvard.edu/summer/web/2019/projects/2/) in 2019. It was one of my earliest experiences with web development, which I think is pretty evident in the design of the app, as the logo and chat rooms are basically my best attempt at replicating Telegram.
 
