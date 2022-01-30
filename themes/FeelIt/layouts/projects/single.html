@@ -82,12 +82,12 @@
     {{ end }}
     {{ if isset .Params "screenshots" }}
     <hr class="full-width">
-    <div uk-slideshow="ratio: 7:3; autoplay: true; autoplay-interval: 6000"
+    <div uk-slideshow="autoplay: true; autoplay-interval: 6000; max-height: 400;"
       class="uk-margin-top uk-position-relative uk-visible-toggle" tabindex="-1">
       <ul class="uk-slideshow-items">
         {{ range .Params.screenshots }}
         <li>
-          <img src="{{ . }}" alt="" class="uk-position-center" uk-img="target: !* -*, !* +*">
+          <img src="{{ . }}" alt="" class="uk-position-center slideshow" uk-img="target: !* -*, !* +*">
         </li>
         {{ end }}
       </ul>

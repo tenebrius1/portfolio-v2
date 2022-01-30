@@ -3,3 +3,5 @@ filter:
     value: django
   - label: Flask
     value: flask
+  - label: Telegram Bot
+    value: telebot
