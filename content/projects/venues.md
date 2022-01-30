@@ -1,6 +1,6 @@
 ---
 categories: [telebot]
-coders: [tenebirus1, kleonang, zihaooo9]
+coders: [tenebrius1, kleonang, zihaooo9]
 date: 2022-01-08
 Image: {url: /images/projects/venues/venues.png, caption: Logo of veNUeS}
 screenshots: [/images/projects/venues/venues_1.jpg, /images/projects/venues/venues_2.jpg, /images/projects/venues/venues_3.jpg]
