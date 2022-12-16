@@ -35,4 +35,4 @@ I handled most of the time related functions such as making sure the correct tim
 
 1. Finally learning the Telegram Bot API which I wanted to learn for a long time!
 2. Having a feasible (being able to complete in the timeframe) and executable (having at least the basic knowledge) idea for the hackathon helps a lot. Basically don't be too ambitious... 
-3. It is probably a good idea to have a development database to use instead of using Firestore immediately if you have lots of data points updated per refresh (we manage to exceed the free tier and had to switch databases halfway through 🤡). 
+3. It is probably a good idea to have a development database to use instead of using Firestore immediately if you have lots of data points updated per refresh (we manage to exceed the free tier and had to switch databases halfway through :")). 
